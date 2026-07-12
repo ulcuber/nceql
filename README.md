@@ -12,9 +12,9 @@ Interactive dependency browser for Gentoo packages using `equery`.
 # Installation
 
 ```bash
-# eselect repositories enable masterwolf && emerge --sync masterwolf # To enable the repository (if not already)
-# echo "app-portage/nceql **" > /etc/portage/package.accept_keywords/nceql  # To accept the unkeyworded pachage
-# emerge --ask app-portage/nceql
+eselect repositories enable masterwolf && emerge --sync masterwolf # To enable the repository (if not already)
+echo "app-portage/nceql **" > /etc/portage/package.accept_keywords/nceql  # To accept the unkeyworded pachage
+emerge --ask app-portage/nceql
 ```
 Or if you would like to manually install instead:
 ```bash
