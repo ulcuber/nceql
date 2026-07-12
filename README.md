@@ -13,7 +13,7 @@ Interactive dependency browser for Gentoo packages using `equery`.
 
 ```bash
 git clone git@github.com:ulcuber/nceql.git
-sudo emerge --ask --quiet --verbose sys-apps/gentoolkit
+sudo emerge --ask --quiet --verbose app-portage/gentoolkit
 ```
 
 # Usage
