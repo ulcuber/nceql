@@ -25,10 +25,10 @@ sudo emerge --ask --quiet --verbose app-portage/gentoolkit
 # Usage
 
 ```bash
-./depgraph <atom>
-./depgraph "@selected"
+depgraph <atom>
+depgraph "@selected"
 # will be slow
-./depgraph "@installed"
+depgraph "@installed"
 ```
 
 # Dev
