@@ -12,17 +12,23 @@ Interactive dependency browser for Gentoo packages using `equery`.
 # Installation
 
 ```bash
+eselect repositories enable masterwolf && emerge --sync masterwolf # To enable the repository (if not already)
+echo "app-portage/nceql **" > /etc/portage/package.accept_keywords/nceql  # To accept the unkeyworded pachage
+emerge --ask app-portage/nceql
+```
+Or if you would like to manually install instead:
+```bash
 git clone git@github.com:ulcuber/nceql.git
-sudo emerge --ask --quiet --verbose sys-apps/gentoolkit
+sudo emerge --ask --quiet --verbose app-portage/gentoolkit
 ```
 
 # Usage
 
 ```bash
-./depgraph <atom>
-./depgraph "@selected"
+depgraph <atom>
+depgraph "@selected"
 # will be slow
-./depgraph "@installed"
+depgraph "@installed"
 ```
 
 # Dev
